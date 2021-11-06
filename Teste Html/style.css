@@ -4,8 +4,15 @@ body {
 
 }
 
+#banner {
+    width: 100%;
+    height: 210px;
+}
+
 h1 {
     text-align: center;
+    border: 10px solid blueviolet; /*gerar a borda*/
+    padding: 20px; /* gerar a altura*/
 
 }
 
