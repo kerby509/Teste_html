@@ -1,5 +1,5 @@
 body {
-    background: #CCCCCC; /* aqui é para botar color no fundo tudo*/
+    
 
 
 }
@@ -7,6 +7,11 @@ body {
 #banner {
     width: 100%;
     height: 210px;
+}
+
+.principal {
+    background: #CCCCCC; /* aqui é para botar color no fundo tudo*/
+
 }
 
 h1 {
@@ -20,7 +25,7 @@ h1 {
 
 p {
     text-align: center; /* aqui é só botar color no fundo dos textos*/
-    background: #CCCCCC;
+    background: #CCCCCC; /* aqui para bota color no background*/
 }
 
 #missao {
@@ -28,9 +33,13 @@ p {
 }
 
 em strong {
-    background: red;
+    color: red;
 }
 
 .itens {
     font-style: italic ;
+}
+
+.beneficios {
+    background: white;
 }
