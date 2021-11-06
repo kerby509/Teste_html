@@ -1,0 +1,26 @@
+body {
+    background: #CCCCCC; /* aqui é para botar color no fundo tudo*/
+
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+
+
+p {
+    text-align: center; /* aqui é só botar color no fundo dos textos*/
+    background: #CCCCCC;
+}
+
+#missao {
+    font-size: 20px";
+}
+
+em strong {
+    background: red;
+}
+
