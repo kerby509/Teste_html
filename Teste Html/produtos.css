@@ -27,3 +27,44 @@ nav a  {
     font-size: 22px;
     /*text-decoration: none;*/
 }
+.produto {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+}
+
+.produto li {
+    display: inline-block;
+    margin: 0 0 0 30px;   /* colocar espaco no canto*/
+    text-align: center;
+    width: 25%; /*espaco entre si*/
+    vertical-align: top;
+
+
+}
+
+#banner1 {
+    width: 200px;
+}
+#banner2 {
+    width: 200px;
+}
+#banner3 {
+    width: 200px;
+}
+
+.produto h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-desc {
+    font-size: 18px ;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+}
+
