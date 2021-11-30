@@ -25,8 +25,13 @@ nav a  {
     color:#000000;
     font-weight: bold; /*colocar em negrito*/
     font-size: 22px;
-    /*text-decoration: none;*/
+    text-decoration: none;
 }
+nav a:hover{ /* dar color quando passa o maouse acima*/
+    color:#C78C19;
+    text-decoration: underline;
+}
+
 .produto {
     width: 940px;
     margin: 0 auto;
@@ -45,6 +50,7 @@ nav a  {
     box-sizing: border-box;
     border:2px solid pink ;
     border-top-width: 10px;
+    border-radius: 15px;
 
 
 }
