@@ -41,6 +41,9 @@ nav a  {
     width: 25%; /*espaco entre si*/
     vertical-align: top;
     background: #CCCCCC;
+    margin: 0 2%; 
+    padding: 30px 20px;
+    box-sizing: border-box;
 
 
 }
