@@ -8,6 +8,9 @@ header {
     width: 940px;
     margin: 0 auto;
 }
+.caixa h1{
+    width: 50px;
+}
 
 nav {
     position: absolute;
@@ -54,6 +57,13 @@ nav a:hover{ /* dar color quando passa o maouse acima*/
 
 
 }
+.produto li:hover{
+    color:#C78C19;
+  
+}
+/*.produto li:active{
+    color: pink;
+}*/
 
 #banner1 {
     width: 200px;
@@ -78,5 +88,9 @@ nav a:hover{ /* dar color quando passa o maouse acima*/
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer {
+    text-align: center;
 }
 
