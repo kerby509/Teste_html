@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1><img src="cream.jpeg"></h1>
+                <h1><img src="cream.jpeg" alt="logo da sorveteria real"></h1>
                 <nav>
                     <ul>
                         <li><a href="Index.html">Home</a></li>
@@ -36,8 +36,8 @@
 
                 <label for="mensagem">Mensagem</label>
                 <textarea cols="50" rows="10" id="Mensagem"required ></textarea>
-                <div>
-                     <p>Como prefere nosso contato?</p>
+                <fieldset>
+                     <legend>Como prefere nosso contato?</legend>
 
                      <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 
@@ -46,22 +46,22 @@
                      
                      <label for="radio-whatsapp" ><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
                      
-               </div>
+                </fieldset>
 
-               <div>
-                   <p>Qual horario prefere ser atendido?</p>
+               <fieldset>
+                   <legend>Qual horario prefere ser atendido?</legend>
 
                     <select>
                         <option>Manhã</option>
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-               </div>
+               </fieldset>
 
                <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
 
 
-                <input type="submit" value="Enviar Formulário">
+                <input type="submit" value="Enviar Formulário" class="enviar">
             </form>
         </main>
 
