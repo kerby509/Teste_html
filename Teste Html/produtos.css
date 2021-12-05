@@ -180,13 +180,30 @@ td,th {
     font-style: italic;
 }
 
-.imagebeneficios{
+.image-beneficios{
     width: 50%;
 }
 .utensilios {
     width: 120px;
     float: left; /*colocar imagem ao lado de um texto*/
     margin: 0 20px 20px 0;
+}
+
+.beneficios {
+    padding: 3em 0;
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.lista.beneficios{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+
 }
 
 .mapa {
