@@ -2,6 +2,10 @@ header {
     background: #BBBBBB;
     padding: 20px 0;
 }
+ body {
+        font-family: 'Montserrat', sans-serif;
+    
+}
 
 .caixa {
     position: relative;
@@ -150,4 +154,50 @@ thead {
 td,th {
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+/*Css da pagina inicial*/
+.banner {
+    width: 100%;
+    height: 210px;
+
+
+}
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong {
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+
+.imagebeneficios{
+    width: 50%;
+}
+.utensilios {
+    width: 120px;
+    float: left; /*colocar imagem ao lado de um texto*/
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding:3em 0;
+}
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
 }
