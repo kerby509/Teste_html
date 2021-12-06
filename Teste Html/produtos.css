@@ -100,8 +100,7 @@ footer {
 
 
 main {
-    width: 940px;
-    margin: 0 auto;
+    
 }
 
 form {
@@ -170,6 +169,11 @@ td,th {
     clear: left;
 
 }
+
+.principal{
+    padding: 3em 0;
+    background: #FFFFFF;
+}
 .principal p{
     margin: 0 0 1em;
 }
@@ -191,17 +195,24 @@ td,th {
 
 .beneficios {
     padding: 3em 0;
+    background: #888888;
+    width: 940px;
+    margin: 0 auto;
 }
+.itens {
+    line-height: 1.5;
+}
+
 .conteudo-beneficios{
     width: 640px;
     margin: 0 auto;
 
 }
 
-.lista.beneficios{
+.lista-beneficios{
     display: inline-block;
     vertical-align: top;
-    width: 20%;
+    width: 30%;
     margin-right: 15%;
 
 }
