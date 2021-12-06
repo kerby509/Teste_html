@@ -225,8 +225,8 @@ td,th {
 
 .mapa {
     padding:3em 0;
-    width: 940px;
     margin: 0 auto;
+    background: linear-gradient(45deg,orange,blue);
 
 
 }
