@@ -101,6 +101,8 @@ footer {
 
 main {
     
+
+    
 }
 
 form {
@@ -196,7 +198,6 @@ td,th {
 .beneficios {
     padding: 3em 0;
     background: #888888;
-    width: 940px;
     margin: 0 auto;
 }
 .itens {
@@ -216,9 +217,18 @@ td,th {
     margin-right: 15%;
 
 }
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+
+}
 
 .mapa {
     padding:3em 0;
+    width: 940px;
+    margin: 0 auto;
+
+
 }
 .mapa p {
     margin: 0 0 2em;
