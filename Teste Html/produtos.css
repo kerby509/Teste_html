@@ -203,6 +203,9 @@ td,th {
 .itens {
     line-height: 1.5;
 }
+.itens:before{
+    content: "✸";
+}
 
 .conteudo-beneficios{
     width: 640px;
@@ -226,7 +229,7 @@ td,th {
 .mapa {
     padding:3em 0;
     margin: 0 auto;
-    background: linear-gradient(45deg,orange,blue);
+    background: linear-gradient(#FEFEFEFE,#888888);
 
 
 }
