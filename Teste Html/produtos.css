@@ -188,6 +188,11 @@ td,th {
 
 .image-beneficios{
     width: 50%;
+    opacity: 1;
+    transition: 300ms;
+}
+.image-beneficios:hover{
+    opacity: 0.6;
 }
 .utensilios {
     width: 120px;
