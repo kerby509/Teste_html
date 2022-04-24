@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato Sorveteria</title>
+        <link rel="stylesheet" href="reset.css">
+
+        <link rel="stylesheet" href="produtos.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="cream.jpeg" alt="logo da sorveteria real"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="produtos.html">Produto</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome & Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email"> Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="Email@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="number" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="50" rows="10" id="Mensagem"required ></textarea>
+                <fieldset>
+                     <legend>Como prefere nosso contato?</legend>
+
+                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                     <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">
+                        Telefone</label>
+                     
+                     <label for="radio-whatsapp" ><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                     
+                </fieldset>
+
+               <fieldset>
+                   <legend>Qual horario prefere ser atendido?</legend>
+
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+               </fieldset>
+
+               <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
+
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horarios</th>
+                    
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h-18h</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>8h-18h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h-18h</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td>8h-18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h-18h</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Sabado</td>
+                        <td>8h-22h</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Close</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="">
+            <p>&copy; Copyright Sorveteria real-2021</p>
+            <p>All rights reserved.</p>
+
+        </footer>
+
+    </body>
+
+
+</html>
