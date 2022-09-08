@@ -1,0 +1,608 @@
+
+<?php
+session_start();
+ob_start();
+include_once 'conexao1.php';
+if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
+    $_SESSION['msg'] = "<p style='color: #000000 '>Erro: Necessário realizar o login para acessar a página!</p>";
+    header("Location: estudante.php");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-ico">
+<title>Celke - Login</title>
+</head>
+<style>
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body {
+font-size: 16px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+background: #FFFFFF ;
+}
+
+
+#navegacao {
+background-image: url("image14.jpg");
+border-bottom: 1px solid #fdfdfd;
+height: 350px;
+
+width: 100%;
+top: 0;
+}
+
+}
+#area {
+width: 1400px;
+margin: 0 auto;
+
+}
+
+#area-principal {
+width: 1260px;
+margin: 55px auto 10px auto;
+}
+
+#logo {
+float: left;
+}
+
+#menu {
+float: right;
+padding: 10px 0;
+color: #FFFFFF;
+}
+
+#postagem {
+background: #fff;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+h2 {
+color: #b9c941;
+}
+
+/****************************************************
+***********************Formatação do menu************/
+a {
+text-decoration: none;
+padding: 5px 10px;
+}
+/*Links não visitados*/
+a:link {
+color: #838383;
+}
+
+/*Links vistados*/
+a:visited {
+color: #838383;
+}
+
+/*Links hover*/
+a:hover {
+color: #fff;
+background: #b9c941;
+}
+
+/*Links active*/
+a:active {
+color: #535353;
+}
+
+
+/*Classes*/
+.verde {
+color: #b9c941;
+}
+
+.data-postagem {
+font-size: 14px;
+border-bottom: 1px solid #f4f4f4;
+display: block;
+padding-bottom: 10px;
+margin-bottom: 10px;
+}
+
+.img-postagem{
+float: left;
+margin:0 10px 5px 0;
+width: 180px;
+
+}
+
+#menu1{
+ background: #FFFF;
+ width: 600px;
+ margin: 100px;
+ color: #FFFF;
+ padding: 30px 10px;
+ text-align: center;
+ position: none;
+ margin-top: 10px;
+ margin: 0 auto;
+ border: 1px solid black;
+}
+ 
+#menu1.a{ 
+color:#b9c941;
+
+}
+
+#menu .div{
+color:#b9c941;
+
+}
+ 
+ 
+
+
+
+.postado {
+border-left: 5px solid #d8d8d8;
+padding-left: 5px;
+display: block;
+margin-top: 40px;
+}
+.educar {
+border-left: 5px solid #d8d8d8;
+padding-left: 5px;
+display: block;
+margin-top: 10px;
+color: rgb(166, 219, 86);
+}
+
+
+
+/*css formulario & footer */
+
+header p{
+        text-align: center;
+    }
+   
+    h2{
+        text-align: center;
+    }
+    .atualiza {
+    
+    
+            background-color: #0000ff	;
+    
+            padding: 12px ;
+            border: none;
+             border-radius: 4px;
+            cursor: pointer;
+            float: center;
+            text-align: center;
+            
+            position:absolute;
+            top: 500px;
+            left: 280px;
+            
+                
+    }
+    
+    
+    body {
+        background-image: url('assets/fundo.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+      }
+    
+    
+    * {
+    box-sizing: border-box;
+    }
+    input[type=text], select, textarea {
+        width: 70%;
+        padding: 15px;
+        border: 0.5px solid rgb(248, 250, 248);
+        border-radius: 4px; 
+        resize: vertical;
+        }
+    
+     label {
+        padding: 12px 12px 0;
+     }
+    
+        input[type=submit] {
+            clear: both;
+            background-color: #141414;/* #7fff00*/
+            color: white;
+            padding: 12px 20px;
+            border: none;
+             border-radius: 4px;
+            cursor: pointer;
+        
+            text-align: center;
+                
+            position:absolute;
+            /*top: 500px;
+            left: 280px;*/
+        }
+    
+        input[type=submit]:hover {
+            background-color: #5F9EA0
+            ;
+            }
+    
+        .container {
+            clear: both;
+            width: 50%;
+            height: 100%;
+           background:#B0C4DE;
+           display: inline-block;
+           position: relative;
+           
+           
+            /*position: absolute;*/
+            
+            left: 280px;
+            right: 280;
+            transform: translate(0%,-5%);
+            border-radius: 10px;
+            padding: 25px;
+             right: 25px;
+        
+           /* text-align: center;*/
+                    
+                
+        }
+       
+    
+        .container a{
+            /* position:absolute;
+            top: 500px;
+            left: 280px; 
+            height: 580px; */
+            
+            
+            float: right;
+            font-weight: bold;
+            color: #000000;
+            text-decoration:none;
+        }
+
+        .form{
+            width: 50%;
+            padding-top: 60px;
+            display: block;
+            margin: 0 auto;
+
+            
+        }
+
+    
+    
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+            color: #fffffe;
+            text-decoration: black;
+        }
+    
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+    
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    
+    
+        @media screen and (max-width: 300px) {
+            .col-25, .col-75, input[type=submit] {
+              width: 100;
+              margin-top: 50;
+            }
+            }
+
+
+
+            footer {
+                background-color:	rgb(25,25,112)  ;
+                color: #FFFFFF;
+                clear: both;
+                /* height: 200px; */
+                padding: 10px;
+            }
+            
+            #privado{
+                text-align: center;
+                
+            }
+            
+            #flag{
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            
+            
+            
+            }
+            
+            .redes div{
+                display: inline-block;
+                margin: 0 0 0 30px; /* colocar espaco no canto*/
+                text-align: center;
+                width: 25%; /* espaco entre si*/
+                vertical-align: top;
+                margin: 0 2%;
+                padding: 30px 20px;
+            }
+
+
+
+            /*menu das faculdades */
+
+            .selected-menu{
+                  cursor: pointer; 
+                  display: flex; 
+                  justify-content: space-between;
+            }
+
+            #menu1 ul{
+            margin: 0;
+            padding: 0;
+            border: 1px solid #f8f8f8;
+            background-color:red;
+            box-shadow: 0px 1px 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        #menu1:hover ul{
+            display: block;
+
+        }
+
+        #menu1 ul li{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #menu1 ul li a{
+            width: 125px;
+            display: block;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+
+        #menu1 ul li a:hover{
+            background-color: #f2f2f2;
+            
+        }
+
+
+            
+
+
+
+
+</style>
+
+<body>
+
+<div id="navegacao">
+            <br>
+            
+            
+        <div id="area">
+            <br>
+            <h2 id="logo"><span class="verde">Estudantes </span> Haitianos no Brasil</h1>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id="area1">
+
+        </div>
+        <div id="menu1">
+            
+            <div class="selected-menu" style= "color:rgb(255, 0, 0); font-weight: 900">
+                UNILA
+                            
+           </div>
+           <ul>
+                <li>
+                    <a href="#"> Computação</a>
+                </li>
+                <li>
+                    <a href="#">C.Sociais</a>
+                </li>
+                <li>
+                    <a href="#">Agronomia</a>
+                </li>
+                <li>
+                    <a href="#">Filosofia</a>
+                </li>
+            </ul>
+
+
+            <a href="texto.php"  style= "color:rgb(255, 0, 0); font-weight: 900">UFFS</a>
+            <a href="./usuario/estudante.php"  style= "color:rgb(255, 0, 0); font-weight: 900">UFSC</a>
+            <a href="./administrador/login.php"  style= "color:rgb(255, 0, 0); font-weight: 900">UNIFSP</a>
+            <a href="sair.php"  style= "color:rgb(255, 0, 0); font-weight: 900">Sair</a>
+
+      
+        </div>
+        
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<h1>Bem vindo <?php echo $_SESSION['nome']; ?>!</h1>
+<br>
+<br>
+
+
+</div>
+
+<header>
+<p>Aqui é o seu ambiante virtual, onde se quiser publicar uma novidade, um artigo de boa
+    qualidade, estamos a sua disposição por favor entrar em contato conosco, e aproveita este mesmo
+    tempo para nos enviar o seu artigo, para que a gente consegui analisar, assim que publicar o seu
+    artigo entraremos em contato contigo, desde já agradecemos por sua participação.</p>
+
+    <p> para poder publicar o seu artigo, ou novidade você precisaria prêencher este campo abaixo
+        com os seguentes dados.
+    </p>
+<br> 
+<br>
+
+
+</header>
+
+
+<br>
+
+
+<div class="container">
+
+
+
+
+<form class="form" action="" method= "POST">
+<div class="row">
+    <div class="col-25">
+    <label for="cpf">Universidade</label>
+    </div>
+    <div class="col-75">
+    <input type="text" id="cpf" name="cpf" placeholder=" Digite sigla "required>
+    </div>
+</div>
+<div class="row">
+    <div class="col-25">
+    <label for="nome">Nome</label>
+    </div>
+    <div class="col-75">
+    <input type="text" id="nome" name="nome" placeholder="Digite nome"required>
+    </div>
+</div>
+<div class="row">
+    <div class="col-25">
+    <label for="modelo">E-mail</label>
+    </div>
+    <div class="col-75">
+    <input type="text" id="email" name="email" placeholder="Digite e-mail">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-25">
+    <label for="telefone">Telefone</label>
+    </div>
+    <div class="col-75">
+    <input type="text" id="telefone" name="telefone" placeholder="(xx)xxxxxxxxx"required>
+    </div>
+    
+</div>
+
+<!-- <div class="row">
+    <div class="col-25">
+    <label for="foto">Foto</label>
+    </div>
+    <div class="col-75">
+
+    <input type="image" name="image" placeholder="anexar image" required>
+    </div>
+    
+</div> -->
+
+<div class="row">
+    <div class="col-25">
+    <label for="arquivo">arquivo</label>
+    </div>
+    <div class="col-75">
+
+    <input type="file" name="file" placeholder="escolher arquivo" required>
+    </div>
+    
+</div>
+<br>
+<br>
+<div class="row">
+  <input type="submit" value="Enviar" name="update"/>
+</div>
+
+
+   
+    
+</form>
+
+
+</div>
+
+<br>
+<br>
+<br>
+
+
+<footer>
+<img src="">
+<main class="redes">
+    <div>
+        <h3>Redes Sociais</h3>
+        <a href=""><i class="fa-brands fa-facebook">escolhiseruffs</i></a> <br>
+        <a href=""><i class="fa-brands fa-instagram">escolhiseruffs</i></a> <br>
+        <a href=""><i class="fa-brands fa-twitter">escolhiseruffs</i></a>    <br>
+    </div>
+
+    <div>
+        <h3>Contatos</h3>
+
+        <a><i class="fa-solid fa-envelope"></i>sebastian@gmail.com</a> <br>
+        <a><i class="fa-solid fa-phone"> </i>+5549985054745</a>    <br>
+        <a><i class="fa-brands fa-whatsapp">+5549985054745</i></a>
+    </div> 
+    <div>
+        <h3>Endereço</h3>
+        <p>Brasil,Chapecó, SC, CEP:89809530 <br> Rua Sebastian del Piero Fontana</p>
+
+    
+    </div> 
+    
+</main>
+<img id="flag" src="assets/flag.jpeg">
+<p id="privado"><span></span>&copy; Estudantes </span> Haitianos no Brasil</p>
+<p id="privado">All rights reserved.</p>
+</footer>
+
+
+</body>
+
+</html>

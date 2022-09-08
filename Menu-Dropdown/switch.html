@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cadastra Cliente</title>
+        
+    </head>
+    <body>
+        <style>
+
+            nav{
+                width: 960;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .selected-menu{
+              cursor: pointer; 
+              display: flex; 
+              justify-content: space-between;
+            }
+
+            .selected-menu:before{
+                content: '';
+                display: block;
+                width: 32px;
+                height: 32px;
+
+            }
+
+            .lang-menu ul{
+                margin: 0;
+                padding: 0;
+                border: 1px solid #f8f8f8;
+                background-color:red;
+                box-shadow: 0px 1px 10px;
+                border-radius: 5px;
+                display: none;
+            }
+
+
+            .lang-menu:hover ul{
+                display: block;
+
+            }
+
+            .lang-menu ul li{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .lang-menu ul li a{
+                width: 125px;
+                display: block;
+                padding: 5px 10px;
+                text-decoration: none;
+            }
+
+            .lang-menu ul li a:before{
+                content: '';
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                vertical-align: middle;
+                margin-right: 10px;
+
+            }
+
+            .lang-menu ul li a:hover{
+                background-color: #f2f2f2;
+                
+            }
+
+        </style>
+
+        <nav>
+            <div class="lang-menu">
+                <div class="selected-menu">
+                    UNILA
+
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"> Computação</a>
+                    </li>
+                    <li>
+                        <a href="#">C.Sociais</a>
+                    </li>
+                    <li>
+                        <a href="#">Agronomia</a>
+                    </li>
+                    <li>
+                        <a href="#">Filosofia</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+    }
+
+    header{
+        background-color: blue;
+    }
+
+    body{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+
+    nav{
+        background-color: blue;
+        text-align: center;
+    }
+    nav ul{
+        display: inline-flex;
+        list-style: none;
+
+    }
+    nav ul li{
+       width: 120px;
+       margin: 15px;
+       padding: 15px; 
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: red;
+    }
+    .sub-menu1{
+        display: none;
+    }
+    nav ul li:hover .sub-menu1{
+        display: block;
+        position: absolute;
+        background-color: #019bb6;
+        margin-top: 15px;
+        margin-left: -38px;
+    }
+    nav ul li:hover .sub-menu1 ul{
+        display: block;
+    }
+    nav ul li:hover .sub-menu1 ul li{
+        width: 150px;
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.7s;
+    }
+    nav ul li:hover .sub-menu1 ul li:hover{
+        background-color: #025e68;
+    }
+
+    .sub-menu2{
+        display: none;
+
+    }
+    .hover-sub:hover .sub-menu2{
+        display: block;
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 140px;
+        background-color: #019bb6;
+    }
+
+
+
+
+
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pagina estudantes</title>
+    
+</head>
+
+<body>
+    <header>
+         <h1>Estudantes Haitianos no Brasil</h1>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="#">UNILA</a>
+                <div class="sub-menu1">
+                    <ul>
+                        <li class="hover-sub"> <a href="#">Curso</a>
+                       
+
+
+                            <div class="sub-menu2">
+                                <ul>
+                                    <li> <a href="#">Computação</a> </li>
+                                    <li> <a href="#">Filosofia</a> </li>
+                                    <li> <a href="#">Agronomia</a> </li>
+                                    <li> <a href="#">Administração</a> </li>
+                                 
+                                </ul>
+
+                            </div>
+                        
+                        </li>
+                        <li class="hover-sub"> <a href="#">Editais</a></li>
+                        <li class="hover-sub"> <a href="#">SAE</a></li>
+                        <li class="hover-sub"> <a href="#">Secretaria academica</a></li>
+
+                        
+    
+      
+                    </ul>
+                </div>
+    
+            </li>
+           
+            
+            <li> <a href="#">UFFS</a> 
+                <div class="sub-menu1">
+                    <ul>
+                        <li class="hover-sub"> <a href="#">Curso</a>
+                            <div class="sub-menu2">
+                                <ul>
+                                    <li> <a href="#">Computação</a> </li>
+                                    <li> <a href="#">Filosofia</a> </li>
+                                    <li> <a href="#">Agronomia</a> </li>
+                                    <li> <a href="#">Administração</a> </li>
+                                 
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="hover-sub"> <a href="#">Editais</a></li>
+                        <li class="hover-sub"> <a href="#">SAE</a></li>
+                        <li class="hover-sub"> <a href="#">Secretaria academica</a></li>
+                      
+      
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="#">UFSC</a> 
+                <div class="sub-menu1">
+                    <ul>
+                        <li class="hover-sub"> <a href="#">Curso</a> 
+                            <div class="sub-menu2">
+                                <ul>
+                                    <li> <a href="#">Computação</a> </li>
+                                    <li> <a href="#">Filosofia</a> </li>
+                                    <li> <a href="#">Agronomia</a> </li>
+                                    <li> <a href="#">Administração</a> </li>
+                                 
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="hover-sub"> <a href="#">Editais</a></li>
+                        <li class="hover-sub"> <a href="#">SAE</a></li>
+                        <li class="hover-sub"> <a href="#">Secretaria academica</a></li>
+                       
+    
+      
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="#">UNFSP</a>
+                <div class="sub-menu1">
+                    <ul>
+                        <li class="hover-sub"> <a href="#">Curso</a> 
+                            <div class="sub-menu2">
+                                <ul>
+                                    <li> <a href="#">Computação</a> </li>
+                                    <li> <a href="#">Filosofia</a> </li>
+                                    <li> <a href="#">Agronomia</a> </li>
+                                    <li> <a href="#">Administração</a> </li>
+                                 
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="hover-sub"> <a href="#">Editais</a></li>
+                        <li class="hover-sub"> <a href="#">SAE</a></li>
+                        <li class="hover-sub"> <a href="#">Secretaria academica</a></li>
+                      
+    
+      
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="#">SAIR</a> </li>
+        </ul>
+
+    </nav>
+</body>
