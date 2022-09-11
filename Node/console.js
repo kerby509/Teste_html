@@ -1,6 +1,7 @@
 //diretorio local, onde está o arquivo que estamos executando
-console.log(__dirname)
+// console.log(__dirname)
+// //caminho completo +nome do arquivo
+// console.log(__filename)
 
-//caminho completo +nome do arquivo
-
-console.log(__filename)
+const myModule = require ('./export')
+console.log(myModule)
