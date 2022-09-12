@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "kerby",
+  "license": "ISC",
+  "dependencies": {
+    "cfonts": "^3.1.1"
+  }
 }
