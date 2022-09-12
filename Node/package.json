@@ -4,7 +4,7 @@
   "description": "aprendendo node",
   "main": "console.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node console.js"
   },
   "author": "kerby",
   "license": "ISC",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "inquirer": "^9.1.1",
+    "moment": "^2.29.4",
     "opn": "^6.0.0"
   }
 }
