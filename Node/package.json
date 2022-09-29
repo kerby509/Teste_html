@@ -4,7 +4,7 @@
   "description": "aprendendo node",
   "main": "console.js",
   "scripts": {
-    "start": "node console.js"
+    "start:dev": "nodemon index.js"
   },
   "author": "kerby",
   "license": "ISC",
