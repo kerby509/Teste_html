@@ -1,5 +1,5 @@
-const Person = require ("./person");
+const {Person} = require ("./person");
 
-const person = new person ("Kerby");
+const person = new Person ("Kerby");
 
 console.log(person.sayMyName());

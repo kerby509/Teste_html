@@ -1,4 +1,4 @@
-class person{
+class Person{
     constructor(name){
         this.name = name;
     }
@@ -11,4 +11,4 @@ class person{
 
 module.exports = {
     Person,
-}
+};
