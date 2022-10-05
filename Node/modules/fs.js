@@ -40,5 +40,7 @@ fs.readFile(path.join(__dirname,"/test","test.txt"),'utf-8',(error,data) =>{
         return console.log("Erro:",error);
 
     }
+    console.log(data)
+
 
 })
