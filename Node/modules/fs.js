@@ -23,6 +23,7 @@ fs.writeFile(path.join(__dirname, '/test','test.txt'), 'Hello world!!', (error) 
     console.log("Conteudo addicionado com sucesso!!!!")
 })
 
+
 // addicionar um arquivo
 
 fs.appendFile(path.join(__dirname, '/test','test.txt'), 'Hello  Node!!', (error) =>{
@@ -31,4 +32,13 @@ fs.appendFile(path.join(__dirname, '/test','test.txt'), 'Hello  Node!!', (error)
     }
 
     console.log("Arquivo modificado com sucesso!!!!")
+})
+
+//ler arquivo
+fs.readFile(path.join(__dirname,"/test","test.txt"),'utf-8',(error,data) =>{
+    if (error){
+        return console.log("Erro:",error);
+
+    }
+
 })
