@@ -21,6 +21,17 @@ body{
 }
 
 #logo{
-    width: 10%;
+    width: 140px;
     padding: 15px;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    flex-wrap: wrap;
 }
