@@ -64,18 +64,36 @@
                         </ul> -->
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link"> Skills</p>
-                            <p class="tab-links"> Experience</p>
-                            <p class="tab-links"> Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                            <p class="tab-links" onclick="opentab('education')"> Education</p>
 
                         </div>
                         <br><br>
                        
-                        <div class="tab-contents">
+                        <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>App Developer</span><br>Building Web/Mobile interfaces</li>
-                                <li><span>Web Developer</span><br>Web/App Development</li>
-                                <li><span>Back-End Developer</span><br>Web/App Development</li>
+                                <li><span>App Developer</span><br>Building Web / Mobile interfaces</li>
+                                <li><span>Web Developer</span><br>Web / App Development</li>
+                                <li><span>Back-End Developer</span><br>Web / App Development</li>
+
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2020</span><br>Ux Scholarship at Compass Uol</li>
+                                <li><span>2022-current</span><br>Data Engineering Scholarship at Compass Uol</li>
+                                <li><span>2020-current</span><br> Busness Website</li>
+
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>Basic Programing at Udemy platform</li>
+                                <li><span>2020-current</span><br>Bachelor's degree in computer SCience at UFFS</li>
+                                <li><span>Back-End Developer</span><br>Web / App Development</li>
 
 
                             </ul>
