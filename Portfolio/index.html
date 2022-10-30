@@ -83,8 +83,8 @@
                         <div class="tab-contents" id="experience">
                             <ul>
                                 <li><span>2020</span><br>Ux Scholarship at Compass Uol</li>
-                                <li><span>2022-current</span><br>Data Engineering Scholarship at Compass Uol</li>
                                 <li><span>2020-current</span><br> Busness Website</li>
+                                <li><span>2022-current</span><br>Data Engineering Scholarship at Compass Uol</li>
 
 
                             </ul>
@@ -111,6 +111,11 @@
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
 
     </script>
