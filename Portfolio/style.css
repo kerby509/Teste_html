@@ -227,4 +227,14 @@ nav ul li a:hover::after{
 
 .work{
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    display: block;
+
 }
