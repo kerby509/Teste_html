@@ -211,3 +211,20 @@ nav ul li a:hover::after{
     background-color: #E09D23;
     transform: translateY(-10px) ;
 }
+
+
+/*------------------portfolio-----------------------------------*/
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+}
