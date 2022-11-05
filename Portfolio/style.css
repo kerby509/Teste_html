@@ -398,10 +398,24 @@ nav .icon {
         background: #E09D23;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .icon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
 
     }
 
