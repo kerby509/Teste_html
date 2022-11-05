@@ -19,11 +19,11 @@
                 <img id="logo" src="assets/Kerby.png">
 
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark  icon" onclick="closemenu()"></i>
 
 
@@ -225,9 +225,9 @@
                         <a href="assets/curriculo_Kerby Lovince.pdf" download class="btn btn2">Download Cv</a>
                     </div>
                     <div class="contact-right">
-                        <form>
-                            <input type="text" name="Name" placeholder="Your name" required>
-                            <input type="email" name="email" placeholder="Your email" required>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
@@ -270,5 +270,18 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyVBRsbkkaGIWu9vobLqVE5d_L6c-1jGrwKPFJ0nN8M7geGb_ga-D4LdJudq1HCKsf8-w/exec';
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
 </body>
 </html>
