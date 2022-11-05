@@ -371,9 +371,16 @@ form btn2{
     margin-top: 20px;
 }
 
+
+
 /*-----------------------CSS for small screen---------------*/
 
-@media only screen and(max-width: 600px){
+nav .icon {
+    display:none ;
+}
+
+
+@media (max-width: 600px){
     #header{
         background-image: url(assets/background.png);
     }
@@ -383,6 +390,19 @@ form btn2{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    nav  .icon  {
+        display: block;
+    }
+    nav ul{
+        background: #E09D23;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+
     }
 
 }
